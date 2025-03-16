@@ -33,8 +33,9 @@ print("LangChain API Key:", os.getenv("LANGCHAIN_API_KEY"))
 print("LangSmith Project:", os.getenv("LANGCHAIN_PROJECT"))
 
 #for steamlit deployment 
-api_key = st.secrets["api_key"]
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 LANGCHAIN_API_KEY=st.secrets["LANGCHAIN_API_KEY"]
+
 
 
 #####################################################################
@@ -79,7 +80,7 @@ st.sidebar.title("Settings")
 
 
 #side bar box 
-api_key = st.sidebar.text_input("Enter your OpenAI API Key", type="password")
+api_key = st.sidebar.text_input("Enter your OpenAI API Key", type="password",value=OPENAI_API_KEY)
 
 #side bar drop down select 
 engine = st.sidebar.selectbox("Select an OpenAI Model", ["gpt-4o", "gpt-4o-mini", "gpt-3.5-turbo"])
