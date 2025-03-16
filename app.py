@@ -33,8 +33,8 @@ print("LangChain API Key:", os.getenv("LANGCHAIN_API_KEY"))
 print("LangSmith Project:", os.getenv("LANGCHAIN_PROJECT"))
 
 #for steamlit deployment 
-OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
-LANGCHAIN_API_KEY=st.secrets["LANGCHAIN_API_KEY"]
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"] #Comment both key when runing on vs code 
+LANGCHAIN_API_KEY=st.secrets["LANGCHAIN_API_KEY"] #Comment both key when runing on vs code 
 
 
 
