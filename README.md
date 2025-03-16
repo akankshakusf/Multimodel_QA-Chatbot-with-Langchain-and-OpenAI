@@ -24,10 +24,3 @@ App link: https://multimodelapp-chatbot-with-langchain-and-openai-wzqznbwh7zkuxr
 ### ✅ **3. AI-Powered Decision Support**
    - Provide instant insights by integrating structured & unstructured data.
    - Fine-tune models to offer **predictive analytics**.
-
-## 🔄 **How to Extend Business Logic**
-1. **Modify Response Processing**  
-   Customize responses with rule-based filtering:
-   ```python
-   if "pricing" in user_input.lower():
-       return "For pricing details, please contact the sales team."
