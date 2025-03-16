@@ -12,7 +12,7 @@ load_dotenv()
 # Set SSL certificate file path using certifi
 os.environ["SSL_CERT_FILE"] = certifi.where()
 
-#####################################################################
+##################################################################### For Debugging only -START
 ## debugging tracking Section for streamlit
 
 import os
@@ -32,13 +32,14 @@ print("Existing LangSmith Projects:", client.list_projects())
 print("LangChain API Key:", os.getenv("LANGCHAIN_API_KEY"))
 print("LangSmith Project:", os.getenv("LANGCHAIN_PROJECT"))
 
+#---------------------------------------------------
 #for steamlit deployment 
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"] #Comment both key when runing on vs code 
 LANGCHAIN_API_KEY=st.secrets["LANGCHAIN_API_KEY"] #Comment both key when runing on vs code 
+#---------------------------------------------------
 
 
-
-#####################################################################
+##################################################################### For Debugging only -END
 
 ## Langsmith Tracking
 os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY") # LangSmith API key
