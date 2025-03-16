@@ -32,6 +32,9 @@ print("Existing LangSmith Projects:", client.list_projects())
 print("LangChain API Key:", os.getenv("LANGCHAIN_API_KEY"))
 print("LangSmith Project:", os.getenv("LANGCHAIN_PROJECT"))
 
+#for steamlit deployment 
+api_key = st.secrets["api_key"]
+LANGCHAIN_API_KEY=st.secrets["LANGCHAIN_API_KEY"]
 
 
 #####################################################################
@@ -72,6 +75,8 @@ st.title("Enhanced Q&A Chatbot with OpenAI")
 
 #side bar name 
 st.sidebar.title("Settings")
+
+
 
 #side bar box 
 api_key = st.sidebar.text_input("Enter your OpenAI API Key", type="password")
